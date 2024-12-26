@@ -13,7 +13,7 @@ services:
       - 8443:8889/udp
       - 8443:8889/tcp
     environment:
-      - SECRET
-      - WORKERS
-      - MTPROTO_REPO_URL
-      - IP
+      - SECRET=${MTPROTO_SECRET}
+      - MTPROTO_REPO_URL=${MTPROTO_REPO_URL}
+      - IP=${MTPROTO_IP}
+
